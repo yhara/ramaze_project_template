@@ -3,6 +3,7 @@
 #   $ ruby start.rb
 #
 require 'ramaze'
+require __DIR__('options.rb')
 
 ##
 ## Settings for development environment here.

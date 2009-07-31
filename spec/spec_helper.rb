@@ -4,6 +4,7 @@
 #
 require 'ramaze'
 require 'ramaze/spec'
+require __DIR__('../options.rb')
 
 ##
 ## Settings for test environment here.

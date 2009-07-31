@@ -4,6 +4,7 @@
 #   $ ramaze start
 #
 require 'ramaze'
+require __DIR__('options.rb')
 
 ##
 ## Settings for production environment here.
