@@ -1,8 +1,12 @@
-# Use this file directly like `ruby start.rb` if you don't want to use the
-# `ramaze start` command.
-# All application related things should go into `app.rb`, this file is simply
-# for options related to running the application locally.
+# Ramaze for development
+# usage:
+#   $ ruby start.rb
+#
+require 'ramaze'
 
-require File.expand_path('app', File.dirname(__FILE__))
+##
+## Settings for development environment here.
+##
 
-Ramaze.start(:adapter => :webrick, :port => 7000, :file => __FILE__)
+require __DIR__('app.rb')
+Ramaze.start(:port => 7000, :root => __DIR__)
