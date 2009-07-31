@@ -1,11 +1,7 @@
-# Define a subclass of Ramaze::Controller holding your defaults for all
-# controllers
-
 class Controller < Ramaze::Controller
-  layout :default
-  helper :xhtml
+  layout 'default'
   engine :Etanni
 end
 
-# Here go your requires for subclasses of Controller:
-require 'controller/main'
+require __DIR__('main.rb')
+require __DIR__('somethings.rb')
